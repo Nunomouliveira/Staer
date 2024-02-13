@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aircraft Map</title>
+</head>
+
+<body>
+    <form action="/" method="post">
+        <label for="country">Select the origin country:</label>
+        <select name="country" id="country">
+            <option value="">--Select a Country--</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Australia">Australia</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="India">India</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Italy">Italy</option>
+            <option value="Russia">Russia</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Portugal">Portugal</option>
+        </select>
+        <input type="submit" value="Submit">
+        <label for="velocity">Minimum Velocity:</label>
+        <input type="text" name="velocity" id="velocity" placeholder="Minimum Velocity">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <div id="map">{{ map|safe }}</div>
+</body>
+
+</html>
